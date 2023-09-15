@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* ------------------------------------------------
+   공통
+--------------------------------------------------- */
+* {
+    font-family: "Noto Sans KR";
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* header, main, footer 영역 안에서 내용의 넓이를 제한하는 박스 */
+.contentContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ------------------------------------------------
+   상단 영역
+--------------------------------------------------- */
+.header {
+    background-color: rgba(255, 255, 255, 0.897);
+    /* 글래스모피즘 효과 */
+    backdrop-filter: blur(4.5px);
+    box-shadow: 0 1px 3px #0002;
+    /* 헤더 상단 고정 */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+}
+/* 상단 영역 아이콘, 로고의 배치 */
+.header .contentContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.header .icon-button {
+    font-size: 24px;
+    font-weight: 900;
+    padding: 16px;
+}
+.header .icon-button:hover {
+    background-color: #dddddd;
+    color: #fff;
+}
+.header .logo {
+    font-size: 26px;
+    font-weight: 400;
+    /* 가로축으로 가운데 정렬 하기 위해 */
+    display: flex;
+    align-items: center;
+    /* line-height: 57px; */
+}
+
+
+/* ------------------------------------------------
+   내용 영역
+--------------------------------------------------- */
+.main {
+    /* background-color: #0001; */
+    /* header에 가려지는 만큼 영역을 밑으로 내림 */
+    margin-top: 57px;
+}
+
+
+/* ------------------------------------------------
+   하단 영역
+--------------------------------------------------- */
+.footer {
+    border-top: 1px solid #dddddd;
+    width: 97%;
+    margin: auto;
+}
+.footer .contentContainer {
+    display: flex;
+}
+.footer .contentContainer .footer-item {
+    /* 각 영역이 동일한 비율이 되도록 */
+    flex: 1;
+    padding: 16px;
+}
+.footer-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 22px 0;
+}
+.footer-item:nth-child(1) p {
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.footer-item:nth-child(2) a {
+    display: flex;
+    /* margin: 20px 0; */
+    padding: 20px 10px;
+}
+.footer-item:nth-child(2) a img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+ .footer-item:nth-child(2) li {
+    border-bottom: 1px solid #9996;
+}
+.footer-item:nth-child(2) li:hover {
+    background-color: #0004;
+}
+ .footer-item:nth-child(2) li:nth-child(2) {
+    border-bottom: none;
+}
+
+.footer-item:nth-child(2) a .blog-post-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.footer-item:nth-child(2) a .blog-post-content {
+    line-height: 1.2;
+}
+
+.footer-item:nth-child(3) .tags li {
+    display: inline-block;
+    background-color: #666;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+.footer-item:nth-child(3) .tags .black {
+    background-color: #222;
+}
+
+
+/* 반응형 부분 */
+@media only screen and (max-width:760px) {
+    .footer .contentContainer {
+        flex-direction: column;
+    }
+}
