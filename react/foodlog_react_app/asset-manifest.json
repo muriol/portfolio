@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/portfolio/react/foodlog_react_app/static/js/main.ee1bd7c2.js",
+    "main.js": "/portfolio/react/foodlog_react_app/static/js/main.26edca38.js",
     "static/media/workshop.jpg": "/portfolio/react/foodlog_react_app/static/media/workshop.326b4fa2602a09804c3b.jpg",
     "static/media/gondol.jpg": "/portfolio/react/foodlog_react_app/static/media/gondol.20c27b42f86c6b5e2b07.jpg",
     "index.html": "/portfolio/react/foodlog_react_app/index.html",
-    "main.ee1bd7c2.js.map": "/portfolio/react/foodlog_react_app/static/js/main.ee1bd7c2.js.map"
+    "main.26edca38.js.map": "/portfolio/react/foodlog_react_app/static/js/main.26edca38.js.map"
   },
   "entrypoints": [
-    "static/js/main.ee1bd7c2.js"
+    "static/js/main.26edca38.js"
   ]
 }
