@@ -36,6 +36,7 @@ const RAW_RUNTIME_STATE =
           ["classnames", "npm:2.5.1"],\
           ["dayjs", "npm:1.11.10"],\
           ["eslint-config-react-app", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:7.0.1"],\
+          ["i", "npm:0.3.7"],\
           ["lodash", "npm:4.17.21"],\
           ["prop-types", "npm:15.8.1"],\
           ["react", "npm:18.2.0"],\
@@ -52,6 +53,7 @@ const RAW_RUNTIME_STATE =
           ["styled-components", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:6.1.6"],\
           ["styled-components-breakpoints", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:1.1.1"],\
           ["styled-reset", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:4.5.2"],\
+          ["swiper", "npm:11.0.5"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
@@ -7021,6 +7023,7 @@ const RAW_RUNTIME_STATE =
           ["classnames", "npm:2.5.1"],\
           ["dayjs", "npm:1.11.10"],\
           ["eslint-config-react-app", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:7.0.1"],\
+          ["i", "npm:0.3.7"],\
           ["lodash", "npm:4.17.21"],\
           ["prop-types", "npm:15.8.1"],\
           ["react", "npm:18.2.0"],\
@@ -7037,6 +7040,7 @@ const RAW_RUNTIME_STATE =
           ["styled-components", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:6.1.6"],\
           ["styled-components-breakpoints", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:1.1.1"],\
           ["styled-reset", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:4.5.2"],\
+          ["swiper", "npm:11.0.5"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
@@ -10716,6 +10720,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../../../C:/Users/user/AppData/Local/Yarn/Berry/cache/human-signals-npm-2.1.0-f75815481d-10c0.zip/node_modules/human-signals/",\
         "packageDependencies": [\
           ["human-signals", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["i", [\
+      ["npm:0.3.7", {\
+        "packageLocation": "../../../../../../C:/Users/user/AppData/Local/Yarn/Berry/cache/i-npm-0.3.7-f9f1e3bd92-10c0.zip/node_modules/i/",\
+        "packageDependencies": [\
+          ["i", "npm:0.3.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17660,6 +17673,15 @@ const RAW_RUNTIME_STATE =
           ["csso", "npm:4.2.0"],\
           ["picocolors", "npm:1.0.0"],\
           ["stable", "npm:0.1.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["swiper", [\
+      ["npm:11.0.5", {\
+        "packageLocation": "../../../../../../C:/Users/user/AppData/Local/Yarn/Berry/cache/swiper-npm-11.0.5-152220df64-10c0.zip/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "npm:11.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\

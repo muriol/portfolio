@@ -4506,6 +4506,7 @@ __metadata:
     classnames: "npm:^2.5.1"
     dayjs: "npm:^1.11.10"
     eslint-config-react-app: "npm:^7.0.1"
+    i: "npm:^0.3.7"
     lodash: "npm:^4.17.21"
     prop-types: "npm:^15.8.1"
     react: "npm:^18.2.0"
@@ -4522,6 +4523,7 @@ __metadata:
     styled-components: "npm:^6.1.6"
     styled-components-breakpoints: "npm:^1.1.1"
     styled-reset: "npm:^4.5.2"
+    swiper: "npm:^11.0.5"
     web-vitals: "npm:^2.1.0"
   languageName: unknown
   linkType: soft
@@ -7356,6 +7358,13 @@ __metadata:
   version: 2.1.0
   resolution: "human-signals@npm:2.1.0"
   checksum: 695edb3edfcfe9c8b52a76926cd31b36978782062c0ed9b1192b36bebc75c4c87c82e178dfcb0ed0fc27ca59d434198aac0bd0be18f5781ded775604db22304a
+  languageName: node
+  linkType: hard
+
+"i@npm:^0.3.7":
+  version: 0.3.7
+  resolution: "i@npm:0.3.7"
+  checksum: fc591b64987c5fcc96aadf9136d8d58b937abb90e9cd840160b9c99a32140ed8a30a94ee1ab7d9a45170ec4d3f872dda9d15afeb1083f689873da6197c25efc7
   languageName: node
   linkType: hard
 
@@ -12733,6 +12742,13 @@ __metadata:
   bin:
     svgo: bin/svgo
   checksum: 0741f5d5cad63111a90a0ce7a1a5a9013f6d293e871b75efe39addb57f29a263e45294e485a4d2ff9cc260a5d142c8b5937b2234b4ef05efdd2706fb2d360ecc
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^11.0.5":
+  version: 11.0.5
+  resolution: "swiper@npm:11.0.5"
+  checksum: 443d147cdca55708dcf0fd174edfd68f6b55166578a9aedc7c636687c071f520e0bb626dd4ea9fb83feb21d61e4e6e4beda8d1f4b7e664077ebda9e22398d815
   languageName: node
   linkType: hard
 

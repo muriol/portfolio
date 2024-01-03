@@ -25,19 +25,37 @@ const FooterContainer = styled.div`
           list-style: none;
           color: #fff;
           margin-top: 16px;
+
+          a {
+            color: #fff;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+              color: #fcc9c5;
+            }
+          }
         }
 
         .list-title {
           font-weight: 600;
-          font-size: 22px;
+          font-size: 23px;
           margin-bottom: 52px;
+
+          i {
+            margin-right: 10px;
+          }
+        }
+
+        .fa-facebook-f, .fa-instagram, .fa-youtube {
+          font-size: 28px;
+          padding: 10px;
         }
       }
     }
   }
 
   .middle-menu-container {
-    width: 830px;
+    width: 760px;
     .middle-menu {
       display: flex;
       justify-content: space-between;
@@ -46,6 +64,18 @@ const FooterContainer = styled.div`
       li {
         font-size: 18px;
         font-weight: 500;
+
+        a {
+          transition: all 0.2s ease-in;
+
+          &:hover {
+            color: #da291c;
+          }
+        }
+
+        .bold {
+          font-weight: bold;
+        }
       }
     }
   }
@@ -72,23 +102,52 @@ const FooterContainer = styled.div`
   }
 
   .group-container {
-    width: 1790px;
+    height: 270px;
     margin: auto;
     display: flex;
 
     .group {
       display: flex;
+      
+      &:nth-child(1) {
+        margin-left: 241px;
+        position: absolute;
+
+        .kcp-img {
+          width: 430px;
+          height: 60px;
+          margin-top: 40px;
+          margin-left: 10px;
+          position: absolute;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-left: 716px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 70px;
+      }
 
       .group-title {
         font-weight: 600;
-        margin-left: 40px;
+
+        li {
+          padding: 8px;
+        }
+      }
+
+      .group-item {
+        margin-left: 30px;
+
+        li {
+          padding: 8px;
+        }
       }
     }
   }
 
-  .kcp-img {
-    width: 450px;
-  }
 `;
 
 function Footer() {
@@ -98,35 +157,36 @@ function Footer() {
         <div className="top-ul-container">
           <ul>
             <li className="list-title">SERVICE</li>
-            <li>각인 서비스</li>
-            <li>선물 포장</li>
-            <li>기업 선물</li>
+            <li><a href="#">각인 서비스</a></li>
+            <li><a href="#">선물 포장</a></li>
+            <li><a href="#">기업 선물</a></li>
+            <li><a href="#">보증 연장 안내</a></li>
           </ul>
 
           <ul>
-            <li className="list-title">DELIVERY</li>
+            <li className="list-title"><i className="fa-solid fa-truck-fast"></i>DELIVERY</li>
             <li>￦30,000 이상 구매시, 무료 배송</li>
           </ul>
 
           <ul>
-            <li className="list-title">CUSTOMER SERVICE</li>
+            <li className="list-title"><i className="fa-solid fa-headset"></i>CUSTOMER SERVICE</li>
             <li>9:00a.m - 18:00p.m / OFF TIME 12:00p.m - 13:00p.m</li>
             <li>토/일 및 법정 공휴일 휴무</li>
           </ul>
 
           <ul>
             <li className="list-title">FOLLOW US</li>
-            <li>페이스북, 인스타, 유튜브</li>
+            <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a><a href="#"><i className="fa-brands fa-instagram"></i></a><a href="#"><i className="fa-brands fa-youtube"></i></a></li>
           </ul>
         </div>
       </div>
 
       <div className="middle-menu-container">
         <ul className="middle-menu">
-          <li>HOME</li>
-          <li>AGREEMENT</li>
-          <li>개인정보처리방침</li>
-          <li>GUIDE</li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">AGREEMENT</a></li>
+          <li><a href="#" className="bold">개인정보처리방침</a></li>
+          <li><a href="#">GUIDE</a></li>
         </ul>
       </div>
 
@@ -142,8 +202,9 @@ function Footer() {
           <ul className="group-title">
             <li>기업</li>
             <li>예금주</li>
+            <img src={kcp} className="kcp-img" href="#" alt="kcp 이미지" />
           </ul>
-          <ul>
+          <ul className="group-item">
             <li>257-084469-01-011</li>
             <li>(주)웨이무역</li>
           </ul>
@@ -157,7 +218,7 @@ function Footer() {
             <li>통신판매업신고번호</li>
             <li>사업자등록번호</li>
           </ul>
-          <ul>
+          <ul className="group-item">
             <li>(주)웨이무역</li>
             <li>우주현</li>
             <li>우보미</li>
@@ -174,15 +235,13 @@ function Footer() {
             <li>E-MAIL</li>
             <li>ADDRESS</li>
           </ul>
-          <ul>
+          <ul className="group-item">
             <li>070-4837-2860</li>
             <li>carandache@waytrading.com</li>
             <li>서울특별시 서초구 서운로11길 71 (서초동) (주)웨이무역</li>
           </ul>
         </div>
       </div>
-
-      <img src={kcp} className="kcp-img" />
     </FooterContainer>
   );
 }
