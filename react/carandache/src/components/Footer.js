@@ -56,6 +56,7 @@ const FooterContainer = styled.div`
 
   .middle-menu-container {
     width: 760px;
+    
     .middle-menu {
       display: flex;
       justify-content: space-between;
@@ -202,7 +203,7 @@ function Footer() {
           <ul className="group-title">
             <li>기업</li>
             <li>예금주</li>
-            <img src={kcp} className="kcp-img" href="#" alt="kcp 이미지" />
+            <a href="#"><img src={kcp} className="kcp-img" alt="kcp 이미지" /></a>
           </ul>
           <ul className="group-item">
             <li>257-084469-01-011</li>
