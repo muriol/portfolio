@@ -24,6 +24,7 @@ const Meta = (props) => {
                 <link rel="shortcut icon" href={props.shortcutIcon} type="image/png" />
                 <link rel="apple-touch-icon" href={props.appleTouchIcon} type="image/png" />
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+                <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/62d5cccc8148eeafcf408feefeb15376?family=Carandache+Office+Sans+Regular" />
             </Helmet>
         </HelmetProvider>
     );

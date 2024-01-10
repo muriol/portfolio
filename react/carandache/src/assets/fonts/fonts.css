@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "CarandacheSans";
+    font-weight: normal;
+    src: url("./CarandacheSans.woff") format("woff");
+}
+@font-face {
+    font-family: "CarandacheSans";
+    font-weight: bold;
+    src: url("./CarandacheSans-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "CarandacheSans";
+    font-weight: light;
+    src: url("./CarandacheSans-Light.woff") format("woff");
+}

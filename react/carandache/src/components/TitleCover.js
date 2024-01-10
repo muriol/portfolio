@@ -255,7 +255,7 @@ function TitleCover() {
       {/* 스위스 메이드 */}
       <div className="swissmade"
           data-aos="fade-up"
-          data-aos-offset="430"
+          data-aos-offset="230"
           data-aos-easing="linear"
           data-aos-duration="700">
         <img src={swissmade} />

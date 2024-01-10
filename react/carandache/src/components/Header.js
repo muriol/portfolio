@@ -30,7 +30,7 @@ const HeaderContainer = styled.div`
 
     /* 메뉴 관련 css */
     .menu-container {
-      width: 1450px;
+      /* width: 100%; */
       height: 80px;
       margin: auto;
       display: flex;
@@ -156,8 +156,6 @@ function Header() {
         direction={"vertical"}
         autoplay={{delay: 3000}}
         loop={true}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide><a href="#">신규 회원가입시 10% 할인쿠폰 지급 ＞</a></SwiperSlide>
         <SwiperSlide><a href="#">카카오톡 채널 추가시, 3000원 할인쿠폰 지급 ＞</a></SwiperSlide>
