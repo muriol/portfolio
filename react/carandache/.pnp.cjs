@@ -30,6 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/jest-dom", "npm:5.17.0"],\
           ["@testing-library/react", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:13.5.0"],\
+          ["aos", "npm:2.3.4"],\
           ["axios", "npm:1.6.3"],\
           ["axios-hooks", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:5.0.2"],\
           ["bootstrap", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:5.3.2"],\
@@ -6184,6 +6185,18 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["aos", [\
+      ["npm:2.3.4", {\
+        "packageLocation": "../../../../../../C:/Users/user/AppData/Local/Yarn/Berry/cache/aos-npm-2.3.4-40ac384fbe-10c0.zip/node_modules/aos/",\
+        "packageDependencies": [\
+          ["aos", "npm:2.3.4"],\
+          ["classlist-polyfill", "npm:1.2.0"],\
+          ["lodash.debounce", "npm:4.0.8"],\
+          ["lodash.throttle", "npm:4.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["arg", [\
       ["npm:5.0.2", {\
         "packageLocation": "../../../../../../C:/Users/user/AppData/Local/Yarn/Berry/cache/arg-npm-5.0.2-2f5805a547-10c0.zip/node_modules/arg/",\
@@ -7160,6 +7173,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/jest-dom", "npm:5.17.0"],\
           ["@testing-library/react", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:13.5.0"],\
+          ["aos", "npm:2.3.4"],\
           ["axios", "npm:1.6.3"],\
           ["axios-hooks", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:5.0.2"],\
           ["bootstrap", "virtual:db9d5228ec13e35666f8fa66e469d3e1a5537d4f7546712a12fe69d9e07b029155749aad08fe81e5d281bae9504c538b79c3748330239364da6a560ceb010c4c#npm:5.3.2"],\
@@ -7314,6 +7328,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../../../C:/Users/user/AppData/Local/Yarn/Berry/cache/cjs-module-lexer-npm-1.2.3-9d788a3c14-10c0.zip/node_modules/cjs-module-lexer/",\
         "packageDependencies": [\
           ["cjs-module-lexer", "npm:1.2.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["classlist-polyfill", [\
+      ["npm:1.2.0", {\
+        "packageLocation": "../../../../../../C:/Users/user/AppData/Local/Yarn/Berry/cache/classlist-polyfill-npm-1.2.0-e5d1976a47-10c0.zip/node_modules/classlist-polyfill/",\
+        "packageDependencies": [\
+          ["classlist-polyfill", "npm:1.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12765,6 +12788,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../../../C:/Users/user/AppData/Local/Yarn/Berry/cache/lodash.sortby-npm-4.7.0-fda8ab950d-10c0.zip/node_modules/lodash.sortby/",\
         "packageDependencies": [\
           ["lodash.sortby", "npm:4.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash.throttle", [\
+      ["npm:4.1.1", {\
+        "packageLocation": "../../../../../../C:/Users/user/AppData/Local/Yarn/Berry/cache/lodash.throttle-npm-4.1.1-856641af92-10c0.zip/node_modules/lodash.throttle/",\
+        "packageDependencies": [\
+          ["lodash.throttle", "npm:4.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\

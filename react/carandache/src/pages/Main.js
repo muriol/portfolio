@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TitleCover from "../components/TitleCover";
+import BestItem from "../components/BestItem";
 
 const MainContainer = styled.div`
 
@@ -14,6 +15,7 @@ function Main() {
     <MainContainer>
       <Header />
       <TitleCover />
+      <BestItem />
       <Footer />
     </MainContainer>
   );

@@ -1,13 +1,21 @@
-import React, {memo} from "react";
+import React, { memo, useEffect } from "react";
 import styled from "styled-components";
+
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import img1 from "../assets/img/img1.jpg";    // 4 볼펜
 import img2 from "../assets/img/img2.jpg";    // 1 용
 import img3 from "../assets/img/img3.jpg";    // 2 키스해링
 import img4 from "../assets/img/img4.jpg";    // 3 폴 스미스
 import img5 from "../assets/img/img5.jpg";    // 5 레만 만년필
+import collection1 from "../assets/img/main_finewriting-01.jpg";
+import collection2 from "../assets/img/main_writing-01.jpg";
+import collection3 from "../assets/img/main_art-01.jpg";
+import swissmade from "../assets/img/main_swissmade.jpg";
 
 const TitleCoverContainer = styled.div`
   img {
@@ -75,9 +83,97 @@ const TitleCoverContainer = styled.div`
     }
   }
 
+
+  .collection-container {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .collection-item {
+      display: block;
+      width: 440px;
+      text-align: center;
+      margin: 19px;
+      transition: all 0.2s ease-in-out;
+
+      .collection1 {
+        background-color: #000;
+        color: #fff;
+        height: 90px;
+      }
+
+      .collection2 {
+        background-color: #f5f5f5;
+        height: 90px;
+      }
+
+      .collection3 {
+        background-color: #da291c;
+        color: #fff;
+        height: 90px;
+      }
+
+      .item-title {
+        font-weight: bold;
+        font-size: 21px;
+        padding-top: 20px;
+      }
+
+      p {
+        padding-top: 13px;
+      }
+
+      &:hover {
+        transform: translateY(-20px);
+      }
+    }
+  }
+
+
+  .swissmade {
+    display: flex;
+    align-items: center;
+    background-color: #da291c;
+
+    img {
+      width: 50%;
+    }
+
+    div {
+      width: 50%;
+      color: #fff;
+      margin-left: 110px;
+
+      h1 {
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+      }
+
+      a {
+        display: inline-block;
+        background-color: #fff;
+        padding: 10px 38px;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
 `;
 
 function TitleCover() {
+  useEffect(() => {
+    // 웹페이지가 열림과 동시에 AOS를 초기화 하기 위해서 호출
+    AOS.init();
+  }, []);
+
   return (
     <TitleCoverContainer>
       {/* 메인 커버 슬라이드 */}
@@ -129,8 +225,46 @@ function TitleCover() {
         </Carousel.Item>
       </Carousel>
 
+
       {/* 컬렉션 메뉴 */}
-      <div></div>
+      <div className="collection-container">
+        <a href="#" className="collection-item">
+          <div className="collection1">
+            <h3 className="item-title">FINE WRITING</h3>
+            <p>고급 필기구 컬렉션</p>
+          </div>
+          <img src={collection1} />
+        </a>
+        <a href="#" className="collection-item">
+          <div className="collection2">
+            <h3 className="item-title">WRITING</h3>
+            <p>오피스 필기구 컬렉션</p>
+          </div>
+          <img src={collection2} />
+        </a>
+        <a href="#" className="collection-item">
+          <div className="collection3">
+            <h3 className="item-title">COLORS</h3>
+            <p>화방용품 컬렉션</p>
+          </div>
+          <img src={collection3} />
+        </a>
+      </div>
+
+
+      {/* 스위스 메이드 */}
+      <div className="swissmade"
+          data-aos="fade-up"
+          data-aos-offset="430"
+          data-aos-easing="linear"
+          data-aos-duration="700">
+        <img src={swissmade} />
+        <div>
+          <h1>SWISSMADE</h1>
+          <p>스위스 필기구/화방용품 전문 브랜드 까렌다쉬,<br />장인들과 함께한 100년의 역사를 만나보세요.</p>
+          <a className="read-more" href="#">READ MORE</a>
+        </div>
+      </div>
     </TitleCoverContainer>
   );
 };

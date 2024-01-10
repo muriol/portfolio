@@ -60,8 +60,11 @@ const HeaderContainer = styled.div`
               border-bottom: #da291c solid 2px;
             }
 
-
           }
+        }
+
+        .shop:hover .depth-wrap {
+          display: block;
         }
       }
 
@@ -107,15 +110,34 @@ const HeaderContainer = styled.div`
 
     .depth-wrap {
       display: none;
-
-      &:hover {
-        display: block;
-      }
+      position: absolute;
+      z-index: 9999;
+      background-color: #fff;
+      width: 100vw;
+      left: calc(-50vw + 50%);
+      height: 400px;
+      margin-top: 1px;
 
       .depth-menu {
-        position: absolute;
-        z-index: 9999;
         display: flex;
+        width: 1280px;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 14px;
+
+        .depth-title {
+          font-weight: bold;
+          padding: 0 20px;
+
+          .depth-item {
+            font-weight: 400;
+            padding-top: 20px;
+
+            li {
+              padding-top: 13px;
+            }
+          }
+        }
       }
     }
 `;
@@ -123,6 +145,7 @@ const HeaderContainer = styled.div`
 function Header() {
   return (
     <HeaderContainer>
+      {/* 최상단 부분 */}
       <Swiper
         style={{
             height: "40px",
@@ -140,94 +163,95 @@ function Header() {
         <SwiperSlide><a href="#">카카오톡 채널 추가시, 3000원 할인쿠폰 지급 ＞</a></SwiperSlide>
       </Swiper>
       
+      
       {/* 메인 메뉴 영역 */}
       <div className="menu-container">
         {/* 좌측 메뉴 5개 */}
         <ul className="main-menu5">
           <li><a href="#">BRAND</a></li>
-          <li><a style={{cursor: "default"}}>SHOP</a>
+          <li className="shop"><a style={{cursor: "default"}}>SHOP</a>
             {/* 마우스 오버시 나타나는 메뉴 */}
             <div className="depth-wrap">
-            <ul className="depth-menu">
-              <li>필기모드
-                <ul>
-                  <li>만년필</li>
-                  <li>수성펜</li>
-                  <li>볼펜</li>
-                  <li>샤프</li>
-                  <li>홀더펜</li>
-                  <li>연필</li>
-                  <li>잉크&리필</li>
-                </ul>
-              </li>
-              <li>COLORS
-                <ul>
-                  <li>CREATIVE CLASS</li>
-                  <li>색연필</li>
-                  <li>크레용</li>
-                  <li>파스텔</li>
-                  <li>과슈</li>
-                  <li>아크릴 물감</li>
-                  <li>펠트펜</li>
-                  <li>흑연</li>
-                  <li>악세사리</li>
-                </ul>
-              </li>
-              <li>WRITING
-                <ul>
-                  <li>커스터마이징</li>
-                  <li>849 FAMILY</li>
-                  <li>888 인피니트</li>
-                  <li>픽스펜슬</li>
-                  <li>연필</li>
-                  <li>REFILL</li>
-                </ul>
-              </li>
-              <li>FINE WRITING
-                <ul>
-                  <li>베리우스</li>
-                  <li>레만</li>
-                  <li>에크리도</li>
-                  <li>REFILL</li>
-                  <li>LEATHER</li>
-                </ul>
-              </li>
-              <li>SPECIAL EDITION
-                <ul>
-                  <li>KEITH HARING</li>
-                  <li>LEMAN RAW UMBER</li>
-                  <li>849 PAUL SMITH</li>
-                </ul>
-              </li>
-              <li>PRESTIGE EDITION
-                <ul>
-                  <li>DRAGON STRAW MARQUETRY 2024</li>
-                  <li>CAELOGRAPH</li>
-                  <li>EDOUARD JUD DRAGON</li>
-                </ul>
-              </li>
-              <li className="none">LIMITED EDITION
-                <ul>
-                  <li>CHINESE ZODIAC</li>
-                  <li>VARIUS TROPHY</li>
-                </ul>
-              </li>
-              <li>선물추천
-                <ul>
-                  <li>BEST ITEM</li>
-                  <li>기업선물</li>
-                  <li>아티스트선물</li>
-                  <li>7만원 이하</li>
-                  <li>15만원 이하</li>
-                  <li>30만원 이하</li>
-                </ul>
-              </li>
-            </ul>
+              <ul className="depth-menu">
+                <li className="depth-title">필기모드
+                  <ul className="depth-item">
+                    <li>만년필</li>
+                    <li>수성펜</li>
+                    <li>볼펜</li>
+                    <li>샤프</li>
+                    <li>홀더펜</li>
+                    <li>연필</li>
+                    <li>잉크&리필</li>
+                  </ul>
+                </li>
+                <li className="depth-title">COLORS
+                  <ul className="depth-item">
+                    <li>CREATIVE CLASS</li>
+                    <li>색연필</li>
+                    <li>크레용</li>
+                    <li>파스텔</li>
+                    <li>과슈</li>
+                    <li>아크릴 물감</li>
+                    <li>펠트펜</li>
+                    <li>흑연</li>
+                    <li>악세사리</li>
+                  </ul>
+                </li>
+                <li className="depth-title">WRITING
+                  <ul className="depth-item">
+                    <li>커스터마이징</li>
+                    <li>849 FAMILY</li>
+                    <li>888 인피니트</li>
+                    <li>픽스펜슬</li>
+                    <li>연필</li>
+                    <li>REFILL</li>
+                  </ul>
+                </li>
+                <li className="depth-title">FINE WRITING
+                  <ul className="depth-item">
+                    <li>베리우스</li>
+                    <li>레만</li>
+                    <li>에크리도</li>
+                    <li>REFILL</li>
+                    <li>LEATHER</li>
+                  </ul>
+                </li>
+                <li className="depth-title">SPECIAL EDITION
+                  <ul className="depth-item">
+                    <li>KEITH HARING</li>
+                    <li>LEMAN RAW UMBER</li>
+                    <li>849 PAUL SMITH</li>
+                  </ul>
+                </li>
+                <li className="depth-title">PRESTIGE EDITION
+                  <ul className="depth-item">
+                    <li>DRAGON STRAW MARQUETRY 2024</li>
+                    <li>CAELOGRAPH</li>
+                    <li>EDOUARD JUD DRAGON</li>
+                  </ul>
+                </li>
+                <li className="depth-title">LIMITED EDITION
+                  <ul className="depth-item">
+                    <li>CHINESE ZODIAC</li>
+                    <li>VARIUS TROPHY</li>
+                  </ul>
+                </li>
+                <li className="depth-title">선물추천
+                  <ul className="depth-item">
+                    <li>BEST ITEM</li>
+                    <li>기업선물</li>
+                    <li>아티스트선물</li>
+                    <li>7만원 이하</li>
+                    <li>15만원 이하</li>
+                    <li>30만원 이하</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </li>
           <li><a href="#">EVENT</a></li>
-          <li><a style={{cursor: "default"}}>INSPIRATION</a></li>
-          <li><a style={{cursor: "default"}}>SERVICE</a></li>
+          <li className="inspiration"><a style={{cursor: "default"}}>INSPIRATION</a></li>
+          <li className="service"><a style={{cursor: "default"}}>SERVICE</a></li>
         </ul>
 
         {/* 우측 검색, 아이콘들 */}
