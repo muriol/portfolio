@@ -21,10 +21,10 @@ const BestItemContainer = styled.div`
       padding: 20px 30px;
       font-size: 22px;
       border-bottom: 2px solid #d0d0d0;
+    }
 
-      &:active {
-        border-bottom: 2px solid #da291c;
-      }
+    .active {
+      border-bottom: 2px solid #da291c;
     }
   }
 
@@ -57,9 +57,8 @@ function BestItem() {
 
   const onTab = useCallback(function(e) {
     e.preventDefault();
-    console.log(e.target.dataset.tab);
 
-    const tabindex = e.target.dataset.tab;
+    const tabindex = parseInt(e.target.dataset.tab);
     return setTabnum(tabindex);
   }, [tabnum]);
 
